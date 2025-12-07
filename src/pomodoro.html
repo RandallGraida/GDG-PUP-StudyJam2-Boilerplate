@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Timer MVP</title>
+  <link rel="stylesheet" href="./styles/pomodoro.css">
+</head>
+<body>
+  <header class="page-header">
+    <div>
+      <p class="eyebrow">Live Coding Classroom</p>
+      <h1>GDG Pomodoro</h1>
+      <p class="lede">Focus timer with task notes, built for demonstrating DOM manipulation and state management.</p>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- ========= START Live Coding: Timer UI ========= -->
+    <section class="panel timer-panel">
+      <header class="panel-header">
+        <div class="mode-switch">
+          <button class="mode-btn active" data-mode="focus" aria-label="Switch to focus">Focus</button>
+          <button class="mode-btn" data-mode="short-break" aria-label="Switch to short break">Short Break</button>
+          <button class="mode-btn" data-mode="long-break" aria-label="Switch to long break">Long Break</button>
+        </div>
+        <p class="iteration-meta">Completed sessions: <span id="iteration-count">0</span></p>
+      </header>
+
+      <div class="timer-display" id="timer-display" aria-live="polite">25:00</div>
+
+      <div class="controls">
+        <button class="btn-primary" id="start-btn">Start</button>
+        <button class="btn-secondary" id="pause-btn">Pause</button>
+        <button class="btn-ghost" id="reset-btn">Reset</button>
+      </div>
+    </section>
+    <!-- ========= END Live Coding ========= -->
+  </main>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
